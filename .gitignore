@@ -33,6 +33,7 @@
 
 # Build
 build/
+.gradle/
 
 # Editor
 .vscode/
