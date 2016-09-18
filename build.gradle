@@ -1,0 +1,19 @@
+apply plugin: 'cpp'
+
+model {
+    components {
+        main(NativeLibrarySpec) {
+            sources {
+                cpp {
+                    source {
+                        srcDirs "src/main/cpp"
+                        include "**/*.cpp"
+                    }
+                    exportedHeaders {
+                        srcDirs "src/main/include", "src/shared/include"
+                    }
+                }
+            }
+        }
+    }
+}
